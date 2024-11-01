@@ -1,0 +1,283 @@
+.sns-builder-wrapper {
+  background: #ccc;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 12px;
+}
+
+.sns-slider-image {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+.sns-slider-image.ui-sortable-helper {
+  opacity: 0.8;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.sns-builder-bottom-toolbar {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.sns-image-header {
+  min-height: 40px;
+  cursor: move;
+}
+
+.sns-image-header .dashicons {
+  font-family: 'dashicons', sans-serif;
+  font-size: 20px;
+  margin: 5px;
+  transition: all 0.3s;
+}
+
+.sns-image-header .dashicons:hover {
+  cursor: pointer;
+  color: #090;
+}
+
+.sns-image-header .sns-image-handle:hover {
+  cursor: move;
+}
+
+.sns-image-header .dashicons.sns-image-delete {
+  margin: 10px;
+}
+
+.sns-image-header .dashicons.sns-image-delete:hover {
+  color: #d00;
+}
+
+.sns-block-title {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.sns-image-tools {
+  float: right;
+  margin-right: 10px;
+  margin: 5px;
+}
+
+.toggle-open .sns-image-header .sns-image-tools .sns-image-edit {
+  color: #090;
+}
+
+/* image preview */
+.sns-image-preview {
+  float: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 50%;
+  height: 437px;
+}
+
+/* add slider image button */
+.sns-add-slider-image {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 5px 0;
+}
+
+.sns-add-slider-image:hover {
+  color: #090;
+}
+
+.sns-add-slider-image .dashicons {
+  margin-right: 5px;
+}
+
+/* no images / new slider tooltip */
+.sns-no-images-tip {
+  display: inline-block;
+  color: #fff;
+  margin-right: 10px;
+  background: #090;
+  border-radius: 3px;
+  padding: 5px 0 5px 10px;
+  position: relative;
+  top: 1px;
+}
+
+.sns-no-images-tip::after {
+  content: '';
+  border-left: 10px solid #090;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  display: inline;
+  float: right;
+  position: relative;
+  right: -10px;
+  top: 4px;
+}
+
+/* image section subsections */
+.sns-builder-subsection {
+  border: 1px solid #ddd;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  background: #fcfcfc;
+  display: none;
+}
+
+/* labels/inputs */
+.sns-builder-subsection input[type="text"], .sns-builder-subsection textarea, .sns-builder-subsection select {
+  width: 200px;
+}
+
+.sns-builder-subsection input, a {
+  margin-bottom: 4px;
+}
+
+.sns-builder-subsection input[type="checkbox"]{
+  margin-top: 0;
+}
+
+.sns-builder-subsection textarea {
+  height: 100px;
+}
+
+.sns-builder-subsection label {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 12px 0 4px;
+  display: inline-block;
+}
+
+.sns-builder-subsection label:first-of-type {
+  margin-top: 0;
+}
+
+#sns-side .inside label {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#sns-side .inside label:first-of-type {
+  margin-top: 0;
+}
+
+#sns-side .inside #sns-post-id {
+  display: none;
+}
+
+#sns-side .inside input, #sns-side .inside select {
+  width: 180px;
+}
+
+/* overlay/dialog */
+.sns-overlay {
+  z-index: 99998;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  display: none;
+}
+
+.sns-overlay-bg {
+  background: rgba(0,0,0,0.8);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sns-dialog {
+  z-index: 99999;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border-radius: 3px;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  width: 50%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.sns-dialog .sns-dialog-close {
+  float: right;
+  font-size: 30px;
+  margin-right: 10px;
+  position: relative;
+  top: -3px;
+  transition: all 0.3s;
+}
+
+.sns-dialog .sns-dialog-close:hover {
+  cursor: pointer;
+  color: #d00;
+}
+
+.sns-dialog .sns-dialog-title {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.sns-dialog .sns-dialog-message {
+  display: inline-block;
+  max-width: 85%;
+  padding: 10px 0;
+}
+
+.sns-dialog .sns-dialog-btn {
+  color: #fff;
+  float: right;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  padding: 3px 8px 1px 2px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: all 0.3s;
+  vertical-align: bottom;
+}
+
+.sns-dialog .sns-dialog-btn:hover {
+  opacity: 0.9;
+  border-bottom-width: 4px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.sns-dialog .sns-dialog-accept {
+  background: #090;
+}
+
+.sns-dialog .sns-dialog-deny {
+  background: #d00;
+}
+
+.sns-copy-shortcode {
+  margin-top: 3px;
+  font-size: 22px;
+  transition: all 0.3s;
+}
+
+.sns-copy-shortcode:hover {
+  cursor: pointer;
+  color: #090;
+}
+
+.sns-shortcode-message {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 1px solid #eee;
+  box-sizing: padding-box;
+  padding-top: 3px;
+  display: none;
+  background: rgba(255,255,255,0.9);
+}

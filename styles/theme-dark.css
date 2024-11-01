@@ -1,0 +1,16 @@
+.sns-slider-image .sns-overlay {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+.sns-slider-image .sns-overlay .sns-overlay-title {
+  color: rgba(255,255,255,0.9);
+}
+
+.sns-slider-image .sns-overlay .sns-overlay-desc {
+  color: rgba(255,255,255,0.8);
+}
+
+.sns-wrapper .slick-arrow::before {
+  color: rgba(0,0,0,0.9);
+}
